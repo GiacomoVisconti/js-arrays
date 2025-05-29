@@ -10,7 +10,11 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers.reverse();
+const reversedTeachers = [];
+for (let i = (teachers.length - 1); i >= 0; i--) {
+  const element = teachers[i];
+  reversedTeachers.push(element)
+}
 console.log(reversedTeachers);
 
 
@@ -58,8 +62,16 @@ console.log(result);
 
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-let teachersString = teachers.join(',');
-console.log(teachersString);
 
+// let teachersString = teachers.join(',');
+
+let teachersString = "";
+
+for (let i = 0; i < teachers.length; i++) {
+  const element = teachers[i];
+  
+  teachersString =  teachersString + element + ", "
+}
+console.log(teachersString);
 
 
