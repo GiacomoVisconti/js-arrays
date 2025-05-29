@@ -28,7 +28,6 @@ for (i = 0; i < teachers.length; i++) {
     //aggiungo l'elemento 'selezionato'
     longNames.push(element)
   }
-
 }
 console.log(longNames);
 
@@ -44,16 +43,17 @@ console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-let isFabioPresent = null;
+let result = null
+const isFabioPresent = result;
 
 for (let i = 0; i < teachers.length; i++) {
   const element = teachers[i];
 
   if (element == "Fabio") {
-    isFabioPresent = true
+    result = true
   }
 }
-console.log(isFabioPresent);
+console.log(result);
 
 
 
